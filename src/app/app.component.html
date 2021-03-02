@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>Masukkan Input</h1>
+<h5>Masukkan judul</h5>
+<input type="text" [(ngModel)]="judulnote"/>
+<h5>Masukkan isi</h5>
+<input type="text" [(ngModel)]="isinote"/>
+<h5>Masukkan tanggal</h5>
+<input type="date" [(ngModel)]="tanggalnote"/><br><br>
+<button (click)="submit()"> Add </button><br><br>
+
+<h5>Masukkan index</h5>
+<input type="text" [(ngModel)]="index"/><br><br>
+<button (click)="pindah2()"> Move to List </button>
+<button (click)="pindah3()">Pindah ke halaman 3</button>
+<router-outlet></router-outlet>
